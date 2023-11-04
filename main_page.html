@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+    <section class="head">
+        <div class="nav">
+            <nav>
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#converter_box"><li>Convert</li></a>
+                    <li>Contact Us</li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    
+    <section class="heading">
+       <div class="heading_text">
+            <h1 id="temp_conv">Temperature <br>Converter</h1>
+            <p id="subh">
+            Convert Temperature Easily.
+            </p>
+            <a href="#converter_box"><button class="conv">CONVERT</button></a>
+        </div>
+    </section>
+
+    <section id="converter_box" class="converter">
+        <div class="conv_box">
+            
+            <div onclick="toggle" class="tem" tabindex="0">
+                <p class="cel">
+                    CELSIUS
+                </p>
+                <p class="deg">Celsius</p>
+                <input placeholder="   Enter Temperature" class="input" id="celsius" type="number">
+                
+                <p id="kelvin">Kelvin</p>
+                <p id="tem_kel">0</p>
+                
+                <p id="faren">Fahrenheit</p>
+                <p id="tem_far">0</p>
+            </div>
+            
+            <div class="tem" tabindex="0">
+                <p class="cel">
+                    FAHREINHEIT
+                </p>
+                <p class="degf">Fahrenheit</p>
+                <input placeholder="   Enter Temperature" class="inputf" id="fahrenheit" type="number">
+                
+                <p id="kelvinf">Kelvin</p>
+                <p id="tem_kelf">0</p>
+                
+                <p id="cels">Celsius</p>
+                <p id="tem_cel">0</p>
+            </div>
+      
+            <button class="conv_but" onclick="convert()">CONVERT</button>
+        </div>
+
+        <div class="contxt">
+            <p class="htconv_h">How to <br>Convert?</p>
+            <div class="htconv_sh">
+                <p>Converting between Celsius (°C) and Fahrenheit (°F):</p>
+                    <br>
+                <p>To convert Celsius to Fahrenheit, you can use the formula:<br>
+                <strong>°F = (°C × 9/5) + 32</strong></p>
+                    <br>
+                <p>To convert Fahrenheit to Celsius, use the formula:<br>
+                <strong>°C = (°F - 32) × 5/9</strong></p>
+                    <br>
+                <p>Converting Fahrenheit (°F) to Kelvin (K):</p>
+                    <br>
+                <p>To convert Fahrenheit to Kelvin, use the formula:<br>
+                <strong>K = (°F + 459.67) × 5/9</strong></p>
+                    <br>
+                <p>These conversion formulas allow you to easily switch between different temperature scales for your specific needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        
+    </section>
+</body>
+</html>
